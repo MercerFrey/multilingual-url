@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> BASE </title>
+  </head>
+  <body>
+    <p> OTHERS HOMEPAGE </p>
+
+    <button id="setCookie" language="de">Deutsch</button>
+    <button id="setCookie" language="en">English</button>
+    <button id="setCookie" language="tr">Türkçe</button>
+
+    <script>
+        // Function to set the cookie
+        function setCookie(event) {
+            document.cookie = `firebase-language-override=${event.target.getAttribute('language')}`;
+            location.reload();
+        }
+        // Add a click event listener to the button
+        const buttons = document.querySelectorAll("#setCookie");
+        buttons.forEach(button => {
+            button.addEventListener("click", setCookie);
+        });
+    </script>
+
+  </body>
+</html>

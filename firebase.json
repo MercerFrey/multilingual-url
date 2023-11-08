@@ -1,24 +1,18 @@
 {
   "hosting": {
-    "public": ".",
+    "public": "dist/app",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "i18n": {
+      "root": "/localized-files" 
+    }
   },
   "emulators": {
     "hosting": {
       "port": 5000
-    },
-    "ui": {
-      "enabled": true
     },
     "singleProjectMode": true
   }
