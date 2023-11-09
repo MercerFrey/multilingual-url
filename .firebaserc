@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "deneme-cd44d"
-  }
+    "default": "deneme-cd44d",
+    "prod": "multilingual-url",
+    "staging": "deneme-cd44d"
+  },
+  "targets": {},
+  "etags": {}
 }
