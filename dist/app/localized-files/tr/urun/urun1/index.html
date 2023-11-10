@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Ürün </title>
+  </head>
+  <body>
+    <div id="jsonData"></div>
+
+    <script>
+        const jsonDataDiv = document.getElementById('jsonData');
+        const language = "tr"
+        // Use the fetch API to load the JSON data from an external file
+        fetch('../../../blogposts.json')
+            .then(response => response.json())
+            .then(data => {
+                // Loop through the JSON data and display the items with the same keys
+                // for (const postKey in data) {
+                //     if (data.hasOwnProperty(postKey)) {
+                //         if (language in data[postKey]) {
+                //             jsonDataDiv.innerHTML += `<b>${postKey}</b>: ${data[postKey][language]}<br><br>`;
+                //         }
+                //     }
+                // }
+                jsonDataDiv.innerHTML += `<b>post1</b>: ${data["post1"][language]}<br><br>`;
+            })
+            .catch(error => {
+                console.error('Error loading JSON file:', error);
+            });
+    </script>
+    <a href="/">GERİ GİT</a>
+  </body>
+</html>
