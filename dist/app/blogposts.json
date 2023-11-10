@@ -8,5 +8,10 @@
         "en":"The files in a subfolder don't need to have analogous files in the public directory or other subfolders. You can create content that is entirely specific to a language and/or country.",
         "de":"Die Dateien in einem Unterordner müssen keine analogen Dateien im öffentlichen Verzeichnis oder anderen Unterordnern haben. Sie können Inhalte erstellen, die ganz spezifisch für eine Sprache und/oder ein Land sind.",
         "tr":"Bir alt klasördeki dosyaların genel dizinde veya diğer alt klasörlerde benzer dosyalara sahip olması gerekmez. Tamamen bir dile ve/veya ülkeye özel içerikler oluşturabilirsiniz."
+    },
+    "post3": {
+        "en":"My name is Melih",
+        "de":"Mein name ist Melih",
+        "tr":"Benim adım melih"
     }
 }
